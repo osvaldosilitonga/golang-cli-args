@@ -32,22 +32,16 @@ func main() {
 		fmt.Println("Bilangan prima harus lebih atau sama dengan 2")
 	}
 
-	isPrime := false
+	// Check is prime
 	for x := 2; x <= number; x++ {
 		if x == number {
-			isPrime = true
+			fmt.Println("The number is a prime number")
 			break
 		}
 		if number%x == 0 {
-			isPrime = false
+			fmt.Println("The number is not a prime number")
 			break
 		}
-	}
-
-	if isPrime == true {
-		fmt.Println("The number is a prime number")
-	} else {
-		fmt.Println("The number is not a prime number")
 	}
 
 }
